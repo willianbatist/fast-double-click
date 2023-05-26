@@ -1,0 +1,27 @@
+.containerTimeLine {
+  height: 100vh;
+}
+
+.containerTimeLine section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.containerTimeLine section div {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.containerTimeLine section svg:hover {
+  transition: all 0.4s;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.containerTimeLine section div h2 {
+  color: #0F293A;
+  font-size: 3rem;
+}

@@ -1,6 +1,7 @@
 import "./styles/global.css";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ChakraProvider } from '@chakra-ui/react'
 import RegisterDatetime from "./pages/registerDatetime/RegisterDatetime"
 import TimeLine from "./pages/timeLine/TimeLine";
 import {
@@ -30,7 +31,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ChakraProvider>
+      <RouterProvider router={router} />
+    </ChakraProvider>
   </React.StrictMode>
 );
 
