@@ -45,10 +45,15 @@ Na raiz do projeto, para dar start ao **Backend**
     
 --
 
-Para dar start no Frontend, terá que entrar no diretório frontend e digitar o comando de start:
+Para dar start no Frontend, terá que entrar no diretório frontend e depois:
+
+    npm install
+   
+ 
+Em seguida:
 
     npm start
-   
+ 
 --
 
 ## A aplicação tem as seguintes funcionalidades:
