@@ -16,7 +16,7 @@ import { useState } from "react";
 
 
 export default function TimeLine() {
-  const { data, isLoading } = useSWR("http://localhost:3001/timeLine", fetcher);
+  const { data, error, isLoading } = useSWR("http://localhost:3001/timeLine", fetcher);
   const [order, setOrder] = useState("desc");
 
   function handleOrderDatetime(array, sortOrder) {
@@ -29,6 +29,7 @@ export default function TimeLine() {
 
 
   if (isLoading) return <h2>Loading...</h2>
+  if (error) return <h2>Ocorreu um problema...</h2>
   return (
     <div className="containerTimeLine">
       <Header />
