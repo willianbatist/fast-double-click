@@ -1,0 +1,35 @@
+header {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #0F293A;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+  font-family: Skolarsanspe bd, sans-serif;
+  color: white;
+}
+
+header nav {
+  width: 100vw;
+}
+
+header ul {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s;
+}
+.link:hover {
+  color: #13afdb;
+}
+
+header li {
+  list-style: none;
+  cursor: pointer;
+  flex-basis: 50%;
+  text-align: center;
+  font-size: 25px;
+  transition: all 0.2s;
+}
