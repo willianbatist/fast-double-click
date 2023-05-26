@@ -1,7 +1,10 @@
+import "./styles/global.css";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import RegisterDatetime from "./pages/registerDatetime/RegisterDatetime"
+import TimeLine from "./pages/timeLine/TimeLine";
 import {
+  Navigate,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -11,8 +14,16 @@ import reportWebVitals from './reportWebVitals';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <Navigate to="/RegisterDatetime" />,
   },
+  {
+    path:"/RegisterDatetime",
+    element: <RegisterDatetime/>,
+  },
+  {
+    path:"/TimeLine",
+    element: <TimeLine/>,
+  }
 ]);
 
 

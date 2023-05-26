@@ -1,3 +1,4 @@
+import "./RegisterDatetime.css";
 import Header from "../../components/header/Header";
 import { postRegisterDatetime } from "../../services/services";
 import { v4 as uuid } from 'uuid';
@@ -18,11 +19,13 @@ export default function RegisterDatetime() {
   }
 
   return(
-  <div>
+  <div className="containerRegisterDatetime">
     <Header/>
     <section>
-      <h2>{date}</h2>
-      <button type="button" onClick={() => handleRegisterDatetime()}>Registrar</button>
+      <div>
+        <h2>{date}</h2>
+        <button type="button" onClick={() => handleRegisterDatetime()}>Registrar</button>
+      </div>
     </section>
   </div>
   )

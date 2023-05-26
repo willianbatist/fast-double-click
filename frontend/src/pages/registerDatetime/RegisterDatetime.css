@@ -1,0 +1,49 @@
+.containerRegisterDatetime {
+  height: 100vh;
+}
+
+.containerRegisterDatetime section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerRegisterDatetime div {
+  font-family: Skolarsanspe bd, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerRegisterDatetime h2 {
+  color: #0F293A;
+  font-size: 3rem;
+}
+
+.containerRegisterDatetime button {
+  background: none;
+  border: none;
+  background-color: #0F293A;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px;
+  padding: 10px;
+  width: 250px;
+  height: 50px;
+
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+}
+
+.containerRegisterDatetime button:hover {
+  background-color: #1f4158;
+}
+
+.containerRegisterDatetime button:active {
+  box-shadow: none;
+  color: #3184b9;
+}
