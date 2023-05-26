@@ -28,8 +28,22 @@ export default function TimeLine() {
   }
 
 
-  if (isLoading) return <h2>Loading...</h2>
-  if (error) return <h2>Ocorreu um problema...</h2>
+  if (isLoading) {
+    return(
+      <div className="loading">
+        <Header />
+        <h2>Carregando...</h2>
+      </div>
+    )
+  }
+  if (error) {
+    return(
+      <div className="error">
+        <Header />
+        <h2>O servido está com problemas</h2>
+      </div>
+    )
+  }
   return (
     <div className="containerTimeLine">
       <Header />
