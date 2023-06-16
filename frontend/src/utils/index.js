@@ -1,6 +1,6 @@
 export function sortDatetimeAsc(array) {
   array.sort(function (a, b) {
-
+    let undefinedDateA = a.datetime || '';
     let undefinedDateB = b.datetime || '';
     let dateA = new Date(undefinedDateA.replace(/(\d{2})\/(\d{2})\/(\d{4}),/, "$2/$1/$3"));
     let dateB = new Date(undefinedDateB.replace(/(\d{2})\/(\d{2})\/(\d{4}),/, "$2/$1/$3"));
